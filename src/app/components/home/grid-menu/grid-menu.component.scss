@@ -3,8 +3,24 @@
   width: 95%;
   margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 400px);
+  grid-template-rows: repeat(2, 450px);
   .grid-item {
+    cursor: pointer;
+    .router-info {
+      color: #fff;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      margin-left: 35px;
+      position: relative;
+      .link {
+        position: absolute;
+        top: 40px;
+      }
+      .decoration {
+        padding-top: 80%;
+      }
+    }
   }
   .first {
     background-color: #fff;
@@ -25,7 +41,7 @@
         font-weight: bold;
         line-height: 30px;
       }
-      button {
+      .btn {
         margin-top: 30px;
         width: 150px;
         height: 40px;
