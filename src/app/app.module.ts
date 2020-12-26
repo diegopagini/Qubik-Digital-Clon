@@ -16,9 +16,21 @@ import { WhoWeAreComponent } from './components/who-we-are/who-we-are.component'
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ModalComponent } from './components/shared/modal/modal.component';
 import { CarouselComponent } from './components/home/carousel/carousel.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, NotFoundComponent, WathWeDoComponent, OurWorkComponent, WhoWeAreComponent, ContactUsComponent, ModalComponent, CarouselComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
+    NotFoundComponent,
+    WathWeDoComponent,
+    OurWorkComponent,
+    WhoWeAreComponent,
+    ContactUsComponent,
+    ModalComponent,
+    CarouselComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,6 +38,7 @@ import { CarouselComponent } from './components/home/carousel/carousel.component
     MaterialModule,
     ReactiveFormsModule,
     HttpClientModule,
+    SwiperModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
