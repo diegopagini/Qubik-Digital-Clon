@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import Swiper from 'swiper';
+
 import SwiperCore, {
   Navigation,
   Pagination,
   Scrollbar,
   A11y,
   Autoplay,
+  EffectFade,
 } from 'swiper/core';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]);
 
 @Component({
   selector: 'app-carousel',
@@ -19,7 +21,7 @@ export class CarouselComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    const mySwiper = new Swiper('.swiper-container', {
+    let mySwiper = new Swiper('.swiper-container', {
       // Optional parameters
       autoplay: {
         delay: 4000,
