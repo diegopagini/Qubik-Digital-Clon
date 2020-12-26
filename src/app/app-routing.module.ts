@@ -10,11 +10,11 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
+  { path: 'whatwedo', component: WathWeDoComponent },
+  { path: 'whoweare', component: WhoWeAreComponent },
+  { path: 'ourwork', component: OurWorkComponent },
+  { path: 'contactus', component: ContactUsComponent },
   { path: '**', component: NotFoundComponent },
-  { path: 'what-we-do', component: WathWeDoComponent },
-  { path: 'who-we-are', component: WhoWeAreComponent },
-  { path: 'our-work', component: OurWorkComponent },
-  { path: 'contact-us', component: ContactUsComponent },
 ];
 
 @NgModule({
