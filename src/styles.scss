@@ -12,3 +12,12 @@ body {
   line-height: 1.43;
   color: #333;
 }
+
+mat-dialog-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}

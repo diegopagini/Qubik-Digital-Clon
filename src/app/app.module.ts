@@ -14,9 +14,10 @@ import { WathWeDoComponent } from './components/wath-we-do/wath-we-do.component'
 import { OurWorkComponent } from './components/our-work/our-work.component';
 import { WhoWeAreComponent } from './components/who-we-are/who-we-are.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { ModalComponent } from './components/shared/modal/modal.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, NotFoundComponent, WathWeDoComponent, OurWorkComponent, WhoWeAreComponent, ContactUsComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, NotFoundComponent, WathWeDoComponent, OurWorkComponent, WhoWeAreComponent, ContactUsComponent, ModalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
