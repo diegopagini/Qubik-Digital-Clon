@@ -17,6 +17,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { ModalComponent } from './components/shared/modal/modal.component';
 import { CarouselComponent } from './components/home/carousel/carousel.component';
 import { SwiperModule } from 'swiper/angular';
+import { GridMenuComponent } from './components/home/grid-menu/grid-menu.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SwiperModule } from 'swiper/angular';
     ContactUsComponent,
     ModalComponent,
     CarouselComponent,
+    GridMenuComponent,
   ],
   imports: [
     BrowserModule,
