@@ -5,6 +5,7 @@
   height: 60px;
   font-size: 14px;
   .title {
+    margin-left: 15px;
     color: #ff6201;
     text-transform: uppercase;
     font-weight: 300;
@@ -13,6 +14,10 @@
   }
   .menu-item {
     display: none;
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    color: #ff6201;
   }
   .example-spacer-start {
     width: 40%;
@@ -33,6 +38,17 @@
         list-style: none;
         text-transform: uppercase;
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-container {
+    display: none;
+  }
+  .header {
+    .menu-item {
+      display: flex;
     }
   }
 }
