@@ -3,16 +3,29 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { MaterialModule } from './material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { WathWeDoComponent } from './components/wath-we-do/wath-we-do.component';
+import { OurWorkComponent } from './components/our-work/our-work.component';
+import { WhoWeAreComponent } from './components/who-we-are/who-we-are.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, NotFoundComponent, WathWeDoComponent, OurWorkComponent, WhoWeAreComponent, ContactUsComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
