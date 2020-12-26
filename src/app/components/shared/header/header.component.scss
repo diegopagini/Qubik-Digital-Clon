@@ -1,0 +1,38 @@
+.header {
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  font-size: 14px;
+  .title {
+    color: #ff6201;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .menu-item {
+    display: none;
+  }
+  .example-spacer-start {
+    width: 40%;
+  }
+  .example-spacer-end {
+    width: 35%;
+  }
+  .navigation-container {
+    width: 100%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      color: #aaaaaa;
+      line-height: 20px;
+      li {
+        list-style: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

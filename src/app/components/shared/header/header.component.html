@@ -1,11 +1,24 @@
-<mat-toolbar>
+<mat-toolbar class="header">
   <button
     mat-icon-button
     class="example-icon"
     aria-label="Example icon-button with menu icon"
+    class="menu-item"
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
+  <span class="title"><strong>qubik</strong> digital</span>
+  <span class="example-spacer-start"></span>
+  <div class="navigation-container">
+    <ul>
+      <li routerLink="what-we-do" routerLinkActive="active">What we do</li>
+      <li>|</li>
+      <li routerLink="our-work" routerLinkActive="active">Our Work</li>
+      <li>|</li>
+      <li routerLink="who-we-are" routerLinkActive="active">Who we are</li>
+      <li>|</li>
+      <li routerLink="contact-us" routerLinkActive="active">Contact us</li>
+    </ul>
+  </div>
+  <span class="example-spacer-end"></span>
 </mat-toolbar>
