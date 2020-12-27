@@ -21,10 +21,10 @@ export class WorksComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    let mySwiper = new Swiper('.swiper-container', {
+    const myOwnSwiper = new Swiper('.swiper-containerx', {
       slidesPerView: 4,
       direction: 'horizontal',
-      loop: true,
+      loop: false,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
