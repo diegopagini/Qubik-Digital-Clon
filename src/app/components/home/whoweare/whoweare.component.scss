@@ -1,0 +1,54 @@
+.more-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 120px;
+  .who {
+    grid-column: 1;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    padding-left: 150px;
+  }
+  .efficientrly {
+    color: #ff6200;
+    line-height: 55px;
+    font-size: 60px;
+    margin-top: 20px;
+    font-weight: bolder;
+  }
+  .info-who {
+    grid-column: 2;
+    font-size: 30px;
+    margin-right: 10%;
+    font-weight: bold;
+  }
+  .button {
+    background: none;
+    border: 1px solid #878787;
+    color: #333;
+    font-size: 14px;
+    padding: 6px 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 30px;
+  }
+  .button:hover {
+    background-color: rgb(59, 59, 59);
+    color: #fff;
+  }
+
+  .we-are {
+    margin-bottom: 35px;
+    color: #3c3c3b;
+    line-height: 36px;
+    font-size: 37px;
+    margin-top: 20px;
+  }
+  .founded {
+    margin-top: 30px;
+    line-height: 24px;
+    font-size: 15px;
+    color: #3c3c3b;
+  }
+}

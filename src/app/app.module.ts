@@ -20,6 +20,7 @@ import { GridMenuComponent } from './components/home/grid-menu/grid-menu.compone
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { OurWorkComponent } from './components/our-work/our-work.component';
 import { WorksComponent } from './components/home/works/works.component';
+import { WhoweareComponent } from './components/home/whoweare/whoweare.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { WorksComponent } from './components/home/works/works.component';
     CarouselComponent,
     GridMenuComponent,
     WorksComponent,
+    WhoweareComponent,
   ],
   imports: [
     BrowserModule,
