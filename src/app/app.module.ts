@@ -21,6 +21,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { OurWorkComponent } from './components/our-work/our-work.component';
 import { WorksComponent } from './components/home/works/works.component';
 import { WhoweareComponent } from './components/home/whoweare/whoweare.component';
+import { FindUsComponent } from './components/home/find-us/find-us.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { WhoweareComponent } from './components/home/whoweare/whoweare.component
     GridMenuComponent,
     WorksComponent,
     WhoweareComponent,
+    FindUsComponent,
   ],
   imports: [
     BrowserModule,
