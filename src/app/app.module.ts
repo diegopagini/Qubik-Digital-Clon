@@ -11,13 +11,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { WathWeDoComponent } from './components/wath-we-do/wath-we-do.component';
-import { OurWorkComponent } from './components/our-work/our-work.component';
 import { WhoWeAreComponent } from './components/who-we-are/who-we-are.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ModalComponent } from './components/shared/modal/modal.component';
 import { CarouselComponent } from './components/home/carousel/carousel.component';
 import { SwiperModule } from 'swiper/angular';
 import { GridMenuComponent } from './components/home/grid-menu/grid-menu.component';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { OurWorkComponent } from './components/our-work/our-work.component';
+import { WorksComponent } from './components/home/works/works.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { GridMenuComponent } from './components/home/grid-menu/grid-menu.compone
     ModalComponent,
     CarouselComponent,
     GridMenuComponent,
+    WorksComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import { GridMenuComponent } from './components/home/grid-menu/grid-menu.compone
     ReactiveFormsModule,
     HttpClientModule,
     SwiperModule,
+    MatCarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

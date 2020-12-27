@@ -1,0 +1,42 @@
+.info {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-top: 70px;
+  .work {
+    grid-column: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+  }
+  .info-work {
+    grid-column: 2;
+    font-size: 30px;
+    margin-right: 10%;
+    font-weight: bold;
+  }
+}
+
+.view-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 200px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #3c3c3b;
+  color: #fff;
+}
+
+.carousel {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
