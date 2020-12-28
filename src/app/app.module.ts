@@ -22,6 +22,7 @@ import { OurWorkComponent } from './components/our-work/our-work.component';
 import { WorksComponent } from './components/home/works/works.component';
 import { WhoweareComponent } from './components/home/whoweare/whoweare.component';
 import { FindUsComponent } from './components/home/find-us/find-us.component';
+import { FinUsUlComponent } from './components/home/fin-us-ul/fin-us-ul.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { FindUsComponent } from './components/home/find-us/find-us.component';
     WorksComponent,
     WhoweareComponent,
     FindUsComponent,
+    FinUsUlComponent,
   ],
   imports: [
     BrowserModule,

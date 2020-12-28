@@ -1,0 +1,51 @@
+<mat-accordion class="acordion">
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title
+        ><span class="title"
+          ><strong>{{ "qubik" | uppercase }}</strong>
+          {{ "digital" | uppercase }}</span
+        ></mat-panel-title
+      >
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+  <mat-expansion-panel
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title> ARGENTINA </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>A. Olleros 2411 Piso 7 Of. 701</p>
+    <p>T. +5411 4777 5158</p>
+    <p>E. info_ar@qubikdigital.com</p>
+  </mat-expansion-panel>
+  <mat-expansion-panel
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title> CHILE </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>A. Av. Nueva Providencia 1881 Of. 1011, Providencia</p>
+    <p>T. +56 2 2753 3644 M. +56 9 5716 7282</p>
+    <p>E. info_cl@qubikdigital.com</p>
+  </mat-expansion-panel>
+  <mat-expansion-panel
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title>USA</mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>A. 180 Cedar Ridge Rd West Chester, PA 19380</p>
+    <p>T. +1 646 201 5896</p>
+    <p>E. info_us@qubikdigital.com</p>
+  </mat-expansion-panel>
+  <hr />
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Quality Policy </mat-panel-title>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+</mat-accordion>
