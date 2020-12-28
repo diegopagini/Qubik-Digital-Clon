@@ -248,10 +248,30 @@ mat-dialog-container {
     justify-content: center;
     align-items: center;
     width: 100% !important;
+    .info-who {
+      .we-are {
+        font-size: 17px !important;
+        line-height: 19px !important;
+        padding-left: 15px !important;
+      }
+      .founded {
+        font-size: 15px !important;
+        line-height: 24px !important;
+        padding-left: 15px !important;
+      }
+    }
     .who {
       padding: 0 !important;
+      .button {
+        padding-left: 15px !important;
+      }
       .efficientrly {
-        padding-left: -10px;
+        margin-left: 35px;
+        font-size: 36px !important;
+        line-height: 37px !important;
+      }
+      h3 {
+        margin-left: 40px;
       }
     }
   }
