@@ -232,4 +232,27 @@ mat-dialog-container {
       }
     }
   }
+
+  .info {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    .info-work {
+      display: none;
+    }
+  }
+
+  .more-info {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    .who {
+      padding: 0 !important;
+      .efficientrly {
+        padding-left: -10px;
+      }
+    }
+  }
 }

@@ -22,12 +22,17 @@ export class WorksComponent implements OnInit {
 
   ngOnInit(): void {
     const myOwnSwiper = new Swiper('.swiper-containerx', {
-      slidesPerView: 4,
+      slidesPerView: 1,
       direction: 'horizontal',
       loop: false,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 4,
+        },
       },
       spaceBetween: 30,
       pagination: {
