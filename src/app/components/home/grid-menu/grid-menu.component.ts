@@ -9,64 +9,21 @@ export class GridMenuComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    document
-      .getElementById('commerce-container')
-      .addEventListener('mouseenter', () => {
-        document.getElementById('commerce').style.display = 'block';
-      });
+    this.makeTheElementVisible('commerce-container', 'commerce');
+    this.makeTheElementVisible('sales-container', 'sales');
+    this.makeTheElementVisible('commerce-container', 'commerce');
+    this.makeTheElementVisible('marketing-container', 'marketing');
+    this.makeTheElementVisible('experiences-container', 'experiences');
+    this.makeTheElementVisible('strategy-container', 'strategy');
+  }
 
-    document
-      .getElementById('commerce-container')
-      .addEventListener('mouseleave', () => {
-        document.getElementById('commerce').style.display = 'none';
-      });
+  makeTheElementVisible(father, element) {
+    document.getElementById(`${father}`).addEventListener('mouseenter', () => {
+      document.getElementById(`${element}`).style.display = 'block';
+    });
 
-    document
-      .getElementById('sales-container')
-      .addEventListener('mouseenter', () => {
-        document.getElementById('sales').style.display = 'block';
-      });
-
-    document
-      .getElementById('sales-container')
-      .addEventListener('mouseleave', () => {
-        document.getElementById('sales').style.display = 'none';
-      });
-
-    document
-      .getElementById('marketing-container')
-      .addEventListener('mouseenter', () => {
-        document.getElementById('marketing').style.display = 'block';
-      });
-
-    document
-      .getElementById('marketing-container')
-      .addEventListener('mouseleave', () => {
-        document.getElementById('marketing').style.display = 'none';
-      });
-
-    document
-      .getElementById('experiences-container')
-      .addEventListener('mouseenter', () => {
-        document.getElementById('experiences').style.display = 'block';
-      });
-
-    document
-      .getElementById('experiences-container')
-      .addEventListener('mouseleave', () => {
-        document.getElementById('experiences').style.display = 'none';
-      });
-
-    document
-      .getElementById('strategy-container')
-      .addEventListener('mouseenter', () => {
-        document.getElementById('strategy').style.display = 'block';
-      });
-
-    document
-      .getElementById('strategy-container')
-      .addEventListener('mouseleave', () => {
-        document.getElementById('strategy').style.display = 'none';
-      });
+    document.getElementById(`${father}`).addEventListener('mouseleave', () => {
+      document.getElementById(`${element}`).style.display = 'none';
+    });
   }
 }

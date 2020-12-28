@@ -22,6 +22,7 @@ mat-dialog-container {
   right: 0;
 }
 
+//Animation
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -52,4 +53,183 @@ mat-dialog-container {
 
 .link {
   cursor: pointer;
+}
+
+//Media Queries
+@media (min-width: 1439px) {
+  .header {
+    .example-spacer-start {
+      width: 600px !important;
+    }
+    .example-spacer-end {
+      width: 500px !important;
+    }
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1460px) {
+  .header {
+    .example-spacer-start {
+      width: 300px !important;
+    }
+    .example-spacer-end {
+      width: 300px !important;
+    }
+  }
+
+  .grid-container {
+    min-height: 450px !important;
+    .grid-item {
+      height: 300px;
+      .router-info {
+        .link {
+          font-size: 22px;
+        }
+        .router-icon {
+          img {
+            max-width: 80px !important;
+            max-height: 80px !important;
+          }
+        }
+        .text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1022px) {
+  .header {
+    .example-spacer-start {
+      width: 100px !important;
+    }
+    .example-spacer-end {
+      width: 100px !important;
+    }
+  }
+  .swiper-container {
+    max-height: 200px;
+    padding-top: 0px;
+    .swiper-wrapper {
+      .swiper-info {
+        padding-top: 0px !important;
+        .main-info {
+          font-size: 28px;
+          line-height: 1.1;
+          margin-top: 0;
+        }
+        .second-info {
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+
+  .grid-container {
+    height: auto;
+    width: 100% !important;
+    .first {
+      .info-container {
+        p {
+          font-size: 20px !important;
+          line-height: 21px !important;
+        }
+      }
+    }
+    .grid-item {
+      height: 300px;
+      .router-info {
+        .link {
+          font-size: 18px;
+        }
+        .router-icon {
+          img {
+            max-width: 60px !important;
+            max-height: 60px !important;
+          }
+        }
+        .text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 319px) and (max-width: 767px) {
+  .modal {
+    min-height: 70vh;
+  }
+  .header {
+    .title {
+      font-size: 20px !important;
+    }
+  }
+  .swiper-container {
+    max-height: 200px;
+    padding-top: 0px;
+    .swiper-wrapper {
+      .swiper-info {
+        padding-top: 0px !important;
+        .main-info {
+          font-size: 20px;
+          line-height: 1.1;
+          margin-top: 0;
+        }
+        .second-info {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .grid-container {
+    height: auto;
+    width: 100% !important;
+
+    .info-container {
+      margin: 0 !important;
+    }
+
+    .first {
+      margin: 0 !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .info-container {
+        margin: 0 !important;
+        p {
+          display: none;
+        }
+        .btn {
+          max-height: 50px !important;
+          max-width: 100px !important;
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    .grid-item {
+      height: 150px;
+      .router-info {
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .link {
+          font-size: 16px;
+          text-align: center;
+        }
+        .router-icon {
+          img {
+            display: none;
+          }
+        }
+        .text {
+          display: none;
+        }
+      }
+    }
+  }
 }

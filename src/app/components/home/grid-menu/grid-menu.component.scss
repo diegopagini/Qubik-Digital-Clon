@@ -3,14 +3,16 @@
   width: 95%;
   margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 450px);
+  grid-template-rows: repeat(2, auto);
   .grid-item {
     cursor: pointer;
     .router-info {
       color: #fff;
       font-size: 22px;
       font-weight: bolder;
-      margin-left: 35px;
+      margin-left: 25px;
+      margin-right: 25px;
+
       position: relative;
       .link {
         text-transform: uppercase;
@@ -27,12 +29,12 @@
         display: none;
         img {
           position: absolute;
-          top: 30%;
+          top: 33%;
           max-width: 120px;
           max-height: 120px;
         }
         .text {
-          padding-top: 60%;
+          padding-top: 55%;
         }
       }
     }
