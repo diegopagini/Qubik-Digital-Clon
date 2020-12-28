@@ -67,7 +67,10 @@ mat-dialog-container {
   }
 }
 
-@media (min-width: 1023px) and (max-width: 1460px) {
+@media (min-width: 1023px) and (max-width: 3460px) {
+  #accordion {
+    display: none !important;
+  }
   .header {
     .example-spacer-start {
       width: 300px !important;
@@ -100,6 +103,10 @@ mat-dialog-container {
 }
 
 @media (min-width: 768px) and (max-width: 1022px) {
+  #accordion {
+    display: none !important;
+  }
+
   .header {
     .example-spacer-start {
       width: 100px !important;
@@ -161,6 +168,9 @@ mat-dialog-container {
 }
 
 @media (min-width: 319px) and (max-width: 767px) {
+  .find-us-container {
+    display: none !important;
+  }
   .modal {
     min-height: 70vh;
   }
@@ -278,9 +288,5 @@ mat-dialog-container {
         margin-left: 40px;
       }
     }
-  }
-
-  .find-us-container {
-    display: none !important;
   }
 }
